@@ -14,12 +14,27 @@ body {
     letter-spacing: 0.03em;
 }
 
-a {
-    text-decoration: none;
+.list {
+    display: flex;
+    padding-top: 0;
+    padding-bottom: 0;
+    list-style: none;
 }
 
-.list {
-    list-style: none;
+.page {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1600px;
+}
+
+.container {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
 }
 
 .logo {
@@ -28,6 +43,10 @@ a {
     font-weight: bold;
     font-size: 26px;
     line-height: 1.19;
+    width: 153px;
+    height: 31px;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .logo-blue {
@@ -38,7 +57,24 @@ a {
     color: var(--link-color);
 }
 
+.site-nav {
+    display: flex;
+    margin-left: 85px;
+}
+
+.site-nav .item {
+    margin-right: 50px;
+}
+
+.site-nav .item:last-child {
+    margin-right: 0;
+}
+
 .site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--link-color);
     font-weight: 500;
     font-size: 14px;
@@ -53,6 +89,11 @@ a {
 
 .site-nav .link .current {
     color: var(--accent-color);
+}
+
+.contacts {
+    display: flex;
+    margin-left: auto;
 }
 
 .contact {
@@ -70,6 +111,10 @@ a {
     color: var(--accent-color);
 }
 
+.hero {
+    padding-top: 98px;
+    padding-bottom: 94px;
+}
 .hero-title {
     color: var(--primary-white-color);
     background: rgba(47, 48, 58, 0.8);
@@ -79,11 +124,19 @@ a {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 .button {
     color: var(--primary-white-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
     background-color: var(--accent-color);
+    display: inline-block;
+    min-width: 200px;
+    height: 50px;
+    text-align: center;
 }
 
 .button.primary {
@@ -96,12 +149,18 @@ a {
     background-color: var(--primary-white-color);
 }
 
+.foto {
+    margin-top: 0;
+    margin-bottom: 30px;  
+}
 .section-title {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .section-titles {
@@ -110,6 +169,8 @@ a {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 .section-text {
@@ -117,6 +178,9 @@ a {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 94px;
 }
 
 .section-name {
@@ -125,6 +189,8 @@ a {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .section-cod {
@@ -139,6 +205,9 @@ a {
 .footer {
     color: var(--primary-white-color);
     background-color:  #2F303A;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .footer-address {
@@ -163,23 +232,36 @@ a {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 68;
+}
+.avtor {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 12px;
+    line-height: 2;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 21;
 }
 
 /*Стили для portfolio
 .html*/
 
 .work-button {
+    width: 128px;
+    height: 38px;
+
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    text-align: center;
-    background-color: var(--accent-color);
+    text-align: center; 
 }
 
 .work-button:hover,
 .work-button:focus {
-    color: var(--accent-color);
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
 }
 
 .work-title {
@@ -203,3 +285,39 @@ a {
     font-size: 18px;
     line-height: 1.56;
 }
+
+.test-container {
+    width: 1230px;
+    padding-left: 15px;
+    padding-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: turquoise;
+}
+
+.flex-element {
+    list-style: none;
+    width: 380px;
+    background-color: tomato;
+
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+}
+
+.flex-element:nth-last-child(3n) {
+    margin-right: 0;
+}
+
+.flex-element:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+}
+    
+
+
+
