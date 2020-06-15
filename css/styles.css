@@ -7,18 +7,17 @@
 }
 
 /*Стили для index.html*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: var(--primary-white-color);
     color: var(--primary-text-color);
     font-family: Roboto;
     letter-spacing: 0.03em;
-}
-
-.h1 .h2 .h3 .p {
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
 }
 
 .list {
@@ -44,6 +43,7 @@ body {
 
 .container {
     display: flex;
+    align-items: baseline;
 }
 
 a {
@@ -52,8 +52,9 @@ a {
 
 .logo {
     width: 153px;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    margin-left: 215px;
+    margin-top: 24px;
+    margin-bottom: 25px;
 
     color: var(--link-color);
     font-family: Raleway;
@@ -84,8 +85,8 @@ a {
 
 .site-nav .link {
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    margin-top: 32px;
+    margin-bottom: 32px;
 
     color: var(--link-color);
     font-weight: 500;
@@ -103,12 +104,10 @@ a {
     color: var(--accent-color);
 }
 
-.contacts {
-    display: flex;
-    margin-left: auto;
-}
-
 .contact {
+    margin-top: 32px;
+    margin-bottom: 32px;
+
     color: var(--primary-text-color);
     font-family: Roboto;
     font-weight: 500;
@@ -123,18 +122,27 @@ a {
     color: var(--accent-color);
 }
 
+.contacts {
+    margin-left: 215px;
+}
+
 .container-hero {
-    display: flex;
+    align-items: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
     width: 1600px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    height: 600px;
+    text-align: center;
+    background: rgba(47, 48, 58, 0.8);
+    text-align: center;
 }
 
 .container-mesedg {
     display: flex;
     width: 1200px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 94px;
+    padding-bottom: 94px;
     margin-left: 200px;
     text-align: center;
 }
@@ -142,38 +150,37 @@ a {
 .container-robota {
     display: flex;
     width: 1200px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 94px;
+    padding-bottom: 94px;
     margin-left: 200px;
     text-align: center;
 }
 
 .container-comanda {
     display: flex;
+    align-items: baseline;
     width: 1600px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-right: 200px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-left: 200px;
     text-align: center;
 }
 
 .container-client {
     display: flex;
     width: 1200px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 94px;
+    padding-bottom: 94px;
     margin-left: 200px;
+    text-align: center;
 }
 
 .hero-title {
-    display: flex;
     width: 696px;
-    margin-top: 200px;
-    margin-bottom: 30px;
-    margin-left: 450px;
+    margin-left: 452px;
+    margin-top: 100px;
 
     color: var(--primary-white-color);
-    background: rgba(47, 48, 58, 0.8);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -186,8 +193,7 @@ a {
     display: inline-block;
     min-width: 200px;
     height: 50px;
-    margin-bottom: 200px;
-    margin-left: 700px;
+    margin-top: 30px;
 
     color: var(--primary-white-color);
     border: 1px solid var(--accent-color);
@@ -214,12 +220,28 @@ a {
     width: 370px;
 }
 
-.foto {
-    width: 270px;
-}
-
 .client {
     width: 170px;
+}
+
+.fotos {
+    width: 370px;
+}
+
+.foto-mesedg {
+    width: calc((100% - 30px * 3) / 4);
+}
+
+.foto-program {
+    width: calc((100% - 30px * 2) / 3);
+}
+
+.foto-name {
+    width: calc((100% - 30px * 3) / 4);
+}
+
+.foto-portfolio {
+    width: calc((100% - 30px * 2) / 3);
 }
 
 .section-title {
@@ -252,7 +274,6 @@ a {
 
 .section-titles {
     margin-bottom: 50px;
-    margin-left: 405px;
 
     color: var(--title-text-color);
     font-weight: 700;
@@ -291,23 +312,28 @@ a {
 }
 
 .container-footer {
-    width: 1600px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
+    width: 1600px;
 
     color: var(--primary-white-color);
-    background-color:  #2F303A;
+    background-color:  #2F303A; 
+}
+
+.container-address {
+    
 }
 
 
 .footer-address {
+    width: 231px;
     color: var(--primary-white-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    font-style: inherit;
+    font-style: normal;
 }
 
 .footer-contact {
@@ -318,9 +344,7 @@ a {
     font-style: normal;
 }
 
-
 .footer-title {
-    width: 206px;
 
     color: var(--primary-white-color);
     font-weight: 700;
@@ -329,16 +353,26 @@ a {
     text-transform: uppercase;
 }
 
-.avtor {
-    width: 310px;
-    margin-left: 15px;
-    margin-bottom: 15px;
-    margin-left: 645px;
+.inst {
+    width: 206px;
+}
 
+.buttons {
+    color: var(--primary-white-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    background-color: var(--accent-color);
+    text-align: center;
+}
+ .mail {
+    width: 570px;
+    margin-left: 216px;
+ }
+
+.avtor {
     color: rgba(255, 255, 255, 0.4);
     font-size: 12px;
     line-height: 2;
-    text-align: center;
 }
 
 /*Стили для portfolio
