@@ -171,7 +171,6 @@ a {
 }
 
 .container-client {
-    display: flex;
     width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
@@ -179,6 +178,12 @@ a {
     margin-right: auto;
     text-align: center;
     background-color: turquoise;
+}
+
+.clients {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-title {
@@ -320,23 +325,36 @@ a {
     text-align: center;
 }
 
+/*Футер*/
+
 .footer {
     display: flex;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
     width: 1600px;
     height: 253px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 214px;
+    padding-right: 216px;
+    padding-top: 45px;
+    padding-bottom: 15px;
+
     color: var(--primary-white-color);
     background-color:  #2F303A; 
 }
 
-.container-address {
-    box-sizing: border-box;
+.logo-footer {
+    width: 153px;
+    padding-bottom: 8px;
+    margin-left: 0;
+}
+
+.lis {
+    list-style: none;
 }
 
 .footer-address {
     width: 231px;
+
     color: var(--primary-white-color);
     font-weight: 400;
     font-size: 14px;
@@ -345,6 +363,8 @@ a {
 }
 
 .footer-contact {
+    width: 231px;
+
     color: rgba(255, 255, 255, 0.6);
     font-weight: 400;
     font-size: 14px;
@@ -352,7 +372,14 @@ a {
     font-style: normal;
 }
 
+.inst {
+    align-items: center;
+    width: 206px;
+}
+
 .footer-title {
+    width: 145px;
+    margin-left: auto;
 
     color: var(--primary-white-color);
     font-weight: 700;
@@ -361,13 +388,8 @@ a {
     text-transform: uppercase;
 }
 
-.inst {
+.footer-ul {
     width: 206px;
-}
-
-.buttons {
-    color: var(--primary-white-color);
-    text-align: center;
 }
 
  .mail {
@@ -375,16 +397,25 @@ a {
     margin-left: 216px;
  }
 
+ .buttons {
+    align-items: center;
+
+    color: var(--primary-white-color);
+    text-align: center;
+}
+
 .avtor {
     display: block;
-    padding-bottom:21px;
-    padding-top:18px;
     width: 310px;
-    text-align: center;
+    margin-top: auto;
+    margin-bottom: 21px;
+    
     color: rgba(255, 255, 255, 0.4);
     font-size: 12px;
     line-height: 2;
+    text-align: center;
 }
+
 
 /*Стили для portfolio
 .html*/
@@ -448,7 +479,7 @@ a {
     margin-top: 0;
     margin-bottom: 4px;
     margin-right: 24px;
-    text-align: center;
+    margin-left: 24px;
 
     color: var(--title-text-color);
     font-weight: 700;
@@ -461,7 +492,8 @@ a {
     width: 322px;
     margin-top: 0;
     margin-bottom: 20px;
-    text-align: center;
+    margin-right: 24px;
+    margin-left: 24px;
 
     color: var(--primary-text-color);
     font-weight: 400;
@@ -471,14 +503,16 @@ a {
 
 .text {
     width: 332px;
-    margin-left: 0;
-    margin-bottom: 0;
-    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 24px;
+    margin-left: 24px;
 
     color: var(--primary-white-color);
     font-weight: 400;
     font-size: 18px;
     line-height: 1.56;
+    background-color: #757575;
 }
 
 
