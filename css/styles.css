@@ -128,6 +128,8 @@ a {
     margin-left: 215px;
 }
 
+/*Контейнери*/
+
 .container-hero {
     align-items: center;
     padding-top: 94px;
@@ -138,52 +140,6 @@ a {
     height: 600px;
     text-align: center;
     background: rgba(47, 48, 58, 0.8);
-}
-
-.container-mesedg {
-    display: flex;
-    width: 1200px;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-.container-robota {
-    width: 1200px;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    background-color: turquoise;
-}
-
-.container-comanda {
-    width: 1600px;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    background-color: tomato;
-}
-
-.container-client {
-    width: 1200px;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    background-color: turquoise;
-}
-
-.clients {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .hero-title {
@@ -222,47 +178,38 @@ a {
     color: var(--accent-color);
     background-color: var(--primary-white-color);
 }
- 
+
+.container-mesedg {
+    display: flex;
+    width: 1170px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 .mesedg {
-    width: 270px;
-}
-
-.program {
-    width: 370px;
-}
-
-.client {
-    width: 170px;
-}
-
-.fotos {
-    width: 370px;
+    width: calc((100% - 30px * 3) / 4);
+    margin-right: 30px;
+    margin-left: 0;
 }
 
 .foto-mesedg {
-    width: calc((100% - 30px * 3) / 4);
-}
-
-.foto-program {
-    width: calc((100% - 30px * 2) / 3);
-}
-
-.foto-name {
-    width: calc((100% - 30px * 3) / 4);
-}
-
-.foto-portfolio {
-    width: calc((100% - 30px * 2) / 3);
+    width: 81px;
+    margin-bottom: 30px;
 }
 
 .section-title {
     width: 270px;
+    margin-bottom: 10px;
 
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .section-text {
@@ -272,23 +219,21 @@ a {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    text-align: center;
 }
 
-.robota {
-    width: 376px;
-    margin-left: 612px;
-
-}
-
-.comanda {
-    width: 264px;
+.container-robota {
+    width: 1170px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
 }
 
 .section-titles {
-    display: block;
     margin-bottom: 50px;
-
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -296,8 +241,24 @@ a {
     text-align: center;
 }
 
+.robota {
+    width: 376px;
+    margin-left: 400px;
+}
+
+.program {
+    width: calc((100% - 30px * 2) / 3);
+    margin-right: 30px;
+    margin-left: 0;
+}
+
+.foto-program {
+    width: 370px;
+}
 
 .section-cod {
+    margin-bottom: 27px;
+
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
@@ -306,8 +267,38 @@ a {
     text-transform: uppercase;
 }
 
+.container-comanda {
+    width: 1600px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.comanda {
+    width: 264px;
+    margin-left: 668px;
+}
+
+.fotos {
+    width: calc((100% - 30px * 3) / 4);
+    margin-right: 30px;
+    margin-bottom: 94px;
+}
+
+.foto-name {
+    width: 270px;
+    height: 260px;
+    margin-bottom: 30px;
+}
+
 .section-name {
-    width: 120px;
+    width: 157px;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+
 
     color: var(--title-text-color);
     font-weight: 500;
@@ -315,8 +306,12 @@ a {
     line-height: 1.19;
     text-align: center;
 }
+
 .section-tex {
     width: 130px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
 
     color: var(--primary-text-color);
     font-weight: 400;
@@ -325,21 +320,61 @@ a {
     text-align: center;
 }
 
+.list-name {
+    width: 206px;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-client {
+    width: 1200px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.clients {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.client {
+    margin-right: 30px;
+    margin-left: 0;
+    width: 170px;
+    height: 90px;
+}
+
+
 /*Футер*/
 
 .footer {
-    display: flex;
     width: 1600px;
-    height: 253px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 214px;
     padding-right: 216px;
-    padding-top: 45px;
-    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
 
     color: var(--primary-white-color);
     background-color:  #2F303A; 
+}
+
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 45px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+    
+.container-address {
+    margin-left: 0;
 }
 
 .logo-footer {
@@ -373,14 +408,12 @@ a {
 }
 
 .inst {
-    align-items: center;
+    display: block;
     width: 206px;
+    margin-left: 69px;
 }
 
 .footer-title {
-    width: 145px;
-    margin-left: auto;
-
     color: var(--primary-white-color);
     font-weight: 700;
     font-size: 14px;
@@ -388,27 +421,46 @@ a {
     text-transform: uppercase;
 }
 
+.insts {
+    width: 145px;
+    margin-bottom: 20px;
+   
+}
 .footer-ul {
     width: 206px;
+    margin-left: 0;
 }
 
  .mail {
+    display: block;
     width: 570px;
-    margin-left: 216px;
+    margin-left: 450px;
+ }
+
+ .mails {
+    width: 219px;
+    margin-bottom: 20px;
  }
 
  .buttons {
-    align-items: center;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    
 
     color: var(--primary-white-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    background-color: var(--accent-color);
     text-align: center;
 }
 
 .avtor {
-    display: block;
     width: 310px;
-    margin-top: auto;
+    margin-top: 18px;
     margin-bottom: 21px;
+    margin-left: 415px;
     
     color: rgba(255, 255, 255, 0.4);
     font-size: 12px;
@@ -454,7 +506,7 @@ a {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    text-align: center; 
+    text-align: center;
 }
 
 .work-button:hover,
@@ -472,6 +524,10 @@ a {
 .flex-element {
     width: 380px;
     margin: 15px;
+}
+
+.foto {
+    display: block;
 }
 
 .work-title {
