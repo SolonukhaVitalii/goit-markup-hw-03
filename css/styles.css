@@ -34,13 +34,17 @@ body {
     margin-left: 30px;
 }
 
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .container-header {
     display: flex;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    width: 1600px;
 }
 
 .container-nav {
@@ -71,10 +75,6 @@ a {
 
 .logo-black {
     color: var(--link-color);
-}
-
-.site-nav {
-    margin-left: 85px;
 }
 
 .site-nav .item {
@@ -125,27 +125,21 @@ a {
 }
 
 .contacts {
-    margin-left: 215px;
+    margin-left: auto;
 }
 
 /*Контейнери*/
 
 .container-hero {
-    align-items: center;
-    padding-top: 94px;
-    padding-bottom: 94px;
     margin-left: auto;
     margin-right: auto;
-    width: 1600px;
-    height: 600px;
-    text-align: center;
+
     background: rgba(47, 48, 58, 0.8);
+    text-align: center;
 }
 
 .hero-title {
     width: 696px;
-    margin-left: 452px;
-    margin-top: 100px;
 
     color: var(--primary-white-color);
     font-weight: 900;
@@ -161,6 +155,7 @@ a {
     min-width: 200px;
     height: 50px;
     margin-top: 30px;
+    margin-bottom: 100px;
 
     color: var(--primary-white-color);
     border: 1px solid var(--accent-color);
@@ -181,18 +176,20 @@ a {
 
 .container-mesedg {
     display: flex;
-    width: 1170px;
-    padding-top: 94px;
-    padding-bottom: 94px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    justify-content: space-between;
 }
 
 .mesedg {
     width: calc((100% - 30px * 3) / 4);
     margin-right: 30px;
-    margin-left: 0;
+    margin-left: 0;   
+}
+
+.mesedg:last-child {
+    margin-right: 0;
 }
 
 .foto-mesedg {
@@ -202,18 +199,20 @@ a {
 
 .section-title {
     width: 270px;
+    text-align: left;
     margin-bottom: 10px;
+    
 
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    text-align: center;
 }
 
 .section-text {
     width: 270px;
+    text-align: left;
 
     color: var(--primary-text-color);
     font-weight: 400;
@@ -222,11 +221,6 @@ a {
 }
 
 .container-robota {
-    width: 1170px;
-    padding-top: 94px;
-    padding-bottom: 94px;
-    padding-left: 15px;
-    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
     text-align: center; 
@@ -234,16 +228,12 @@ a {
 
 .section-titles {
     margin-bottom: 50px;
+
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-}
-
-.robota {
-    width: 376px;
-    margin-left: 400px;
 }
 
 .program {
@@ -268,9 +258,6 @@ a {
 }
 
 .container-comanda {
-    width: 1600px;
-    padding-top: 94px;
-    padding-bottom: 94px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -278,7 +265,8 @@ a {
 
 .comanda {
     width: 264px;
-    margin-left: 668px;
+    
+    text-align: center;
 }
 
 .fotos {
@@ -294,7 +282,6 @@ a {
 }
 
 .section-name {
-    width: 157px;
     margin-bottom: 10px;
     margin-right: auto;
     margin-left: auto;
@@ -308,7 +295,6 @@ a {
 }
 
 .section-tex {
-    width: 130px;
     margin-bottom: 16px;
     margin-left: auto;
     margin-right: auto;
@@ -321,16 +307,12 @@ a {
 }
 
 .list-name {
-    width: 206px;
     margin-bottom: 24px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .container-client {
-    width: 1200px;
-    padding-top: 94px;
-    padding-bottom: 94px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -353,11 +335,8 @@ a {
 /*Футер*/
 
 .footer {
-    width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 214px;
-    padding-right: 216px;
     border-bottom: 1px solid #ccc;
 
     color: var(--primary-white-color);
@@ -368,8 +347,6 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding-top: 45px;
-    padding-bottom: 15px;
     border-bottom: 1px solid #ccc;
 }
     
@@ -473,13 +450,9 @@ a {
 .html*/
 
 .container-work {
-    width: 1230px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 93px;
-    padding-bottom: 94px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 .wors {
@@ -522,7 +495,7 @@ a {
 }
 
 .flex-element {
-    width: 380px;
+    width: 370px;
     margin: 15px;
 }
 
