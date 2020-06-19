@@ -59,7 +59,7 @@ a {
 .logo {
     width: 153px;
     margin-right: 85px;
-    margin-top: 24px;
+    margin-bottom: 25px;
 
     color: var(--link-color);
     font-family: Raleway;
@@ -136,19 +136,21 @@ a {
 
 .section-hero {
     color: var(--primary-white-color);
-    background: rgba(47, 48, 58, 0.8);
-    text-align: center; 
+    background-color: rgba(47, 48, 58, 0.8);
 }
 
 .container-hero {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
     padding-top: 94px;
-    padding-bottom: 94px;  
+    padding-bottom: 94px;
 }
 
 .hero-title {
     width: 696px;
+    margin-left: 250px;
+    margin-top: 200px;
     margin-bottom: 30px;
     
     color: var(--primary-white-color);
@@ -260,6 +262,7 @@ a {
 }
 
 .section-cod {
+    margin-top: 27px;
     margin-bottom: 27px;
 
     color: var(--title-text-color);
@@ -324,9 +327,9 @@ a {
 }
 
 .list-name {
+    width: 206px;
     margin-bottom: 24px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 32px;
 }
 
 .container-client {
@@ -365,15 +368,11 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
-    
-.container-address {
-    display: block;
-}
 
 .logo-footer {
+    display: block;
     width: 153px;
-    margin-top: 60px;
-    padding-bottom: 8px;
+    margin-bottom: 20px;
 }
 
 .lis {
@@ -418,11 +417,10 @@ a {
 .insts {
     width: 145px;
     margin-bottom: 20px;
-   
 }
+
 .footer-ul {
     width: 206px;
-    margin-left: 0;
 }
 
  .mail {
